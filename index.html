@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Carly Wysocki</title>
+
+  <link rel="stylesheet" type="text/css" href="../wysockiportfolio/css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" type="text/css" href="../wysockiportfolio/css/style.css" />
+
+  <script type="text/javascript" src="../wysockiportfolio/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../wysockiportfolio/js/jquery.fullPage.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['home', 'about', 'projects', 'contact'],
+        sectionsColor: ['#3D4373', '#F2D261', '#FFF', '#F27D88'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Home', 'About', 'Projects', 'Contact'],
+        slidesNavigation: false,
+        responsiveWidth: 756
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <div class="container welcome">
+        <h1>Hey, I'm Carly.<br> Aspiring web designer and developer.</h1>
+        <a href="#about"><i class="fa fa-chevron-down animated infinite bounce"></i></a>
+      </div>
+    </div>
+
+    <div class="section" id="section1">
+      <div class="container aboutme">
+        <h3>My name is Carly Wysocki. I'm a Media Studies graduate from the University of Guelph-Humber, with a passion for web design and development. blah blah blah</h3>
+        <span class="social-links">
+        	<a href="https://github.com/carlywysocki" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        	<a href="https://codepen.io/CarlyWysocki/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+        	<a href="https://ca.linkedin.com/in/carlywysocki" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </span>
+      </div>
+    </div>
+
+    <div class="section" id="section2">
+      <div class="container portfolio">
+        <div class="slide">
+          <div class="project-thumbnail">
+            <a href="#">
+              <div class="overlay"></div>
+              <img src="https://i.imgur.com/w439mEw.jpg" class="img-fluid">
+              <div class="project-details fadeIn-bottom">
+                <h3 class="content-title">Mac DeMarco</h3>
+                <p class="content-text">My interpretation of the Mac DeMarco website.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project-thumbnail">
+            <a href="#">
+              <div class="overlay"></div>
+              <img src="https://i.imgur.com/w439mEw.jpg" class="img-fluid">
+              <div class="project-details fadeIn-bottom">
+                <h3 class="content-title">Anew You Rejuvenation</h3>
+                <p class="content-text">Branding and web design for local business.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project-thumbnail">
+            <a href="#">
+              <div class="overlay"></div>
+              <img src="https://i.imgur.com/w439mEw.jpg" class="img-fluid">
+              <div class="project-details fadeIn-bottom">
+                <h3 class="content-title">Kinetic Café</h3>
+                <p class="content-text">Rebranding project.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project-thumbnail">
+            <a href="#">
+              <div class="overlay"></div>
+              <img src="https://i.imgur.com/w439mEw.jpg" class="img-fluid">
+              <div class="project-details fadeIn-bottom">
+                <h3 class="content-title">Whisky Whisdom</h3>
+                <p class="content-text">Facebook app design for Canadian Club.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project-thumbnail">
+            <a href="#">
+              <div class="overlay"></div>
+              <img src="https://i.imgur.com/w439mEw.jpg" class="img-fluid">
+              <div class="project-details fadeIn-bottom">
+                <h3 class="content-title">Portfolio Website</h3>
+                <p class="content-text">Designed and coded my personal portfolio.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section3">
+      <div class="container email">
+        <h2><i class="fa fa-envelope animated infinite tada"></i> Keep in touch!
+          <br><a href="mailto:carly.wysocki@gmail.com" target="_blank">carly.wysocki@gmail.com</a></h2>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
