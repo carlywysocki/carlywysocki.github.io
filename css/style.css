@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:700,900");
+@import url('https://fonts.googleapis.com/css?family=Lato:700,900');
 
-html,
-body {
-  font-family: "Lato", sans-serif;
+html, body {
+  font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -21,57 +20,66 @@ body {
 h1 {
   font-weight: 900;
   font-size: 5em;
-  color: #f27d88;
+  color: #F27D88;
 }
 
 h2 {
   font-weight: 900;
   font-size: 4em;
-  color: #f2d261;
+  color: #F2D261;
 }
 
 h3 {
   font-weight: 900;
   font-size: 2em;
-  color: #3d4373;
+  color: #3D4373;
 }
 
-#section0 a {
-  font-size: 4em;
-  color: #f27d88;
-}
-
-.social-links a {
-  font-size: 3em;
-  color: #3d4373;
-  -webkit-transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  display: inline-block;
-}
-
-.social-links a:hover {
-  transform: scale(1.2);
-}
-
-.fa-codepen {
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1.5em;
+p {
+	font-weight: 700;
+	font-size: 1.5em;
+	color: #3D4373;
 }
 
 .img-fluid {
   width: 100%;
 }
 
+/*Welcome Section*/
+#section0 a {
+	font-size: 4em;
+  	color: #F27D88;
+}
+
+/*About Section*/
+.social-links a {
+	font-size: 3em;
+  	color:#3D4373;
+  	-webkit-transition: transform .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+  	transition: transform .5s ease-in-out;
+  	display: inline-block;
+}
+
+.social-links a:hover{
+	transform: scale(1.2);
+}
+
+.fa-codepen {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1.5em;
+}
+
+/*Portfolio Section*/
 .fp-controlArrow.fp-next {
-  border-color: transparent transparent transparent #f27d88 !important;
+  border-color: transparent transparent transparent #F27D88 !important;
   right: 45px !important;
 }
 
 .fp-controlArrow.fp-prev {
-  border-color: transparent #f27d88 transparent transparent !important;
+  border-color: transparent #F27D88 transparent transparent !important;
   left: 45px !important;
 }
 
@@ -83,7 +91,7 @@ h3 {
 }
 
 .project-thumbnail .overlay {
-  background: rgba(61, 67, 115, 0.7);
+  background: rgba(61,67,115,0.7);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -97,7 +105,7 @@ h3 {
   transition: all 0.4s ease-in-out 0s;
 }
 
-.project-thumbnail:hover .overlay {
+.project-thumbnail:hover .overlay{
   opacity: 1;
 }
 
@@ -118,30 +126,116 @@ h3 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.project-thumbnail:hover .project-details {
+.project-thumbnail:hover .project-details{
   top: 50%;
   left: 50%;
   opacity: 1;
 }
 
-.project-details h3 {
-  color: #f27d88;
-  font-weight: 500;
+.project-details h4{
+  color: #F27D88;
+  font-size: 1.5em;
+  font-weight: 900;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
 
-.project-details p {
-  color: #f27d88;
-  font-size: 0.8em;
+.project-details p{
+  color: #F27D88;
+  font-size: 1em;
+  font-weight: 700;
 }
 
-.fadeIn-bottom {
+a{
+text-decoration: none;
+}
+
+a.content-link{
+  color: #F27D88;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover.content-link{
+  text-decoration: underline;
+}
+
+.fadeIn-bottom{
   top: 80%;
 }
 
+/*Contact Section*/
 #section3 a {
-  color: #f2d261;
-  text-decoration: none;
+	color: #F2D261;
+	text-decoration: none;
+}
+
+/*Portfolio Details Page*/
+.portfolio-page {
+	background-color: #F2D261;
+}
+
+.portfolio-page h1 {
+	font-weight: 700;
+	font-size: 2.5em;
+	color: #3D4373;
+}
+
+/*Footer*/
+footer {
+	font-weight: 700;
+	font-size: 1em;
+	color: #F2D261;
+	padding: 1em;
+}
+
+.portfolio-page footer {
+	font-weight: 700;
+	font-size: 1em;
+	color: #3D4373;
+	background-color: #F2D261;
+	padding: 1em;
+	text-align: center;
+}
+
+/*Responsive Styling*/
+
+@media(max-width:767px) {
+	h1 {
+		font-size: 3.5em;
+	}
+	
+	h2 {
+  		font-size: 2em;
+	}
+
+	h3 {
+  		font-size: 1.8em;
+	}
+	
+	.social-links a {
+		font-size: 2.5em
+	}
+	
+	.fp-controlArrow.fp-next {
+  		right: 20px !important;
+		}
+
+	.fp-controlArrow.fp-prev {
+  		left: 20px !important;
+		}
+		
+	.project-details h4{
+  		font-size: 1em;
+  		}
+		
+	.project-details p{
+  		font-size: 0.8em;
+		}
+
+	a.content-link{
+  		font-size: 0.8em;
+	}
 }
